@@ -30,20 +30,51 @@
     <div id="particles-js"></div>
     <script src="img-fondo/particles.js-master/particles.js"></script>
     <script src="img-fondo/particles.js-master/demo/js/app.js"></script>
-    <section class="Language">
-        <picture onclick="window.open('https://milenion.com', '_blank')" title="Ir a MileniON">
-            <source media="(max-width: 600px)" srcset="img/logo2.png">
-            <source media="(max-width: 400px)" srcset="img/logo2.png">
-            <img src="img/logo.png">
-        </picture>
+    <section class="socialMedia">
+        <img onclick="window.open('https://milenion.com', '_blank')" title="Ir a MileniON" src="img/logo.png" alt="Logo">
         <ul class="sci">
-            <li data-text="Español" data-color="#12365D">
-                <a href="https://es.milenion.link" class="español"><p class="fa">es</p></a>
+            <li data-text="Facebook" data-color="transparent">
+                <a href="https://www.facebook.com/milenion.oficial" target="_blank" class="facebook"><i class="fab fa-facebook" style="color: #1877f2"></i></a>
             </li>
-            <li data-text="English" data-color="#12365D">
-                <a href="https://en.milenion.link" class="english"><p class="fa">en</p></a>
+            <li data-text="YouTube" data-color="transparent">
+                <a href="https://www.youtube.com/channel/UCPvcJSI06FPyiJ6k9Gmih-A" target="_blank" class="youtube"><i class="fab fa-youtube" style="color: #ff0000"></i></a>
+            </li>
+            <li data-text="Twitter" data-color="transparent">
+                <a href="https://twitter.com/MileniOnOficial" target="_blank" class="twitter"><i class="fab fa-twitter" style="color: #0099ff"></i></a>
+            </li>
+            <li data-text="Instagram" data-color="transparent">
+                <a href="https://www.instagram.com/milenion.oficial/" target="_blank" class="instagram"><i class="fab fa-instagram" style="color: #e4405f"></i></a>
             </li>
 		</ul>
+		<ul class="sci">
+            <li data-text="Telegram" data-color="transparent">
+                <a href="https://t.me/MileniON_ES" target="_blank" class="telegram"><i class="fab fa-telegram" style="color: #2F9DDF"></i></a>
+            </li>
+            <li data-text="TikTok" data-color="transparent">
+                <a href="https://www.tiktok.com/@milenion.oficial?lang=es" target="_blank" class="tiktok"><i class="fab fa-tiktok" style="color: #F7004C"></i></a>
+            </li>
+            <li data-text="LinkedIn" data-color="transparent">
+                <a href="https://www.linkedin.com/company/milenion" target="_blank" class="linkedin"><i class="fab fa-linkedin" style="color: #0e76a8"></i></a>
+            </li>
+            <li data-text="Contacto" data-color="transparent">
+                <a class="newsletter"  onclick="window.open('https://inversor.milenion.com', '_blank')" href="#"><i class="fas fa-envelope" style="color: #333"></i></a>
+            </li>
+        </ul>
+    
+    <div id="popup">
+        <div class="content">
+            <img src="img/email.png" alt="email">
+            <h2>Visítanos en nuestra web</h2>
+            <p>Ingresa a <a href="https://milenion.com">MileniON</a> y regístrate para conocer nuestros beneficios!</p><!-- 
+            <div class="inputBox">
+                <input type="email" placeholder="Ingresa tu email">
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Enviar" class="btn">
+            </div> -->
+        </div>        
+        <a class="close" onclick="window.open('https://inversor.milenion.com', '_blank')"><img src="img/close.png" alt="close"></a>
+    </div>
     <script src="js/vanilla-tilt.min.js"></script>
     <script>
 
@@ -74,7 +105,7 @@ VanillaTilt.init(document.querySelectorAll(".sci li a"), {
         VanillaTilt.init(document.querySelectorAll(".sci li a"));
 
         let list = document.querySelectorAll('.sci li');
-        let bg = document.querySelector('.Language');
+        let bg = document.querySelector('.socialMedia');
         list.forEach(elements => {
             elements.addEventListener('mouseenter', function
             (event){
@@ -87,7 +118,14 @@ VanillaTilt.init(document.querySelectorAll(".sci li a"), {
                 bg.style.backgroundColor = 'transparent';
             })
         })
+
+        
+        function popupToggle()
+        {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
     </script>
-</section>
+    </section>
 </body>
 </html>

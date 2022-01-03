@@ -1,16 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@font-face {
-    font-family: 'power_symbols';
-    src: url('fonts/Unicode_IEC_symbol.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.power{
-  font-family: 'power_symbols';
-  font-style: normal;
-  color: #7102a2;
-}
 *
 {
     margin: 0;
@@ -69,7 +57,7 @@ visibility: hidden;
     align-items: center;
     flex-direction: column;
 }
-#popup .content picture img
+#popup .content img
 {
     max-width: 80px;
 }
@@ -117,26 +105,29 @@ visibility: hidden;
     right: 30px;
     cursor: pointer;
 }
-.Language
+.socialMedia
 {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
     transition: 0.5s;
+    background-color: transparent;
 }
-.Language picture img
+.socialMedia img
 {
-    position: absolute;
-    width: 540px;
-    top: 200px;
+    width:540px;
+    position:absolute; 
+    top:120px;
     z-index: 10;
     cursor: pointer;
 }
 .sci
 {
-    position: relative;
     display: flex;
+	flex-direction: row;
+    margin-top: 480px;
 }
 .sci li
 {
@@ -146,10 +137,10 @@ visibility: hidden;
 {
     content: attr(data-text);
     position: absolute;
-    top: 70%;
+    top: 28%;
     left: 50%;
-    transform: translate(-50%,calc(-50% + 120px));
-    font-size: 7vw;
+    transform: translate(-50%,calc(50% + 120px));
+    font-size: 14vw;
     pointer-events: none;
     font-weight: 700;
     transition: 0.5s;
@@ -163,19 +154,18 @@ visibility: hidden;
 .sci li a
 {
     position: relative;
-    display: inline-block;
-    width: 120px;
-    height: 120px;
+    /* display: inline-block; */
+    width: 150px;
+    height: 150px;
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #333;
     border-radius: 10px;
     text-decoration: none;
-    margin: 80px;
-    top: 90px;
-    font-size: 4em;
+    margin: 20px;
+    font-size: 6em;
     transform-style: preserve-3d;
     perspective: 500px;
     box-shadow: 0 25px 35px rgba(255, 255, 255, 0.05);
@@ -185,62 +175,113 @@ visibility: hidden;
 {
     border-radius: 10px;
 }
-.sci li a:hover.español
+.sci li a:hover.facebook
 {
     background: transparent;
 }
-.sci li a:hover.english
+.sci li a:hover.telegram
 {
     background: transparent;
 }
-.sci li a .fa
+.sci li a:hover.instagram
+{
+    background: transparent;
+}
+.sci li a:hover.twitter
+{
+    background: transparent;
+}
+.sci li a:hover.youtube
+{
+    background: transparent;
+}
+.sci li a:hover.tiktok
+{
+    background: transparent;
+}
+.sci li a:hover.linkedin
+{
+    background: transparent;
+}
+.sci li a:hover.newsletter
+{
+    background: transparent;
+}
+.sci li a .fab
 {
     transition: 0.25s;
-    pointer-events: none; 
-    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
 }
-.sci li a .fa
+.sci li a .fas
 {
     transition: 0.25s;
-    pointer-events: none; 
-    font-family: 'Poppins', sans-serif;
+    pointer-events: none;
 }
-.sci li a:hover .fa
+.sci li a:hover .fab
 {
-    color: #020202;
-    transform: scale(1.75) translateZ(50px); 
-    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    transform: scale(1.75) translateZ(50px);
 }
-.sci li a:hover .fa
+.sci li a:hover .fas
 {
-    color: #020202;
-    transform: scale(1.75) translateZ(50px); 
-    font-family: 'Poppins', sans-serif;
+    color: #03a9f4;
+    transform: scale(1.75) translateZ(50px);
 }
-@media only screen and (max-width: 600px)
+@media only screen and (min-width: 1366px)
 {
-    .sci li
-    {
-        margin-top: 350px;
+    .sci
+    {        
+        flex-direction: row;
+        margin-top: 200px;
     }
     .sci li::before
     {
-        top: 35%;
-        font-size: 14vw;
+        margin-top: 0;
+        top: 70%;
+        transform: translate(-50%,calc(50% + 38px));
+    }
+    .socialMedia
+    {
+        transform: scale(0.8);
+    }
+    .socialMedia img
+    { 
+        top:74px;
+    }
+}
+@media only screen and (max-width: 992px)
+{
+    .sci
+    {        
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+	body
+	{		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+    .sci
+    {
+        margin-top: 0;
     }
     .sci li a
-    {
-        margin: 40px;
-        top: 30px;
+    {        
+        width: 100px;
+        height: 100px;
     }
-    .Language
+    .socialMedia img
     {
-        min-height: 100vh;
+        width:240px;
+        position:absolute; 
+        top:30px;
     }
-    .Language picture img
+    .sci li::before
     {
-        width: 250px;
-        top:10%;
-        left: 20vw;
+        top: 70%;
     }
 }
