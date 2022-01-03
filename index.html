@@ -2,17 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/logo2.png">
-    <meta name="copyright" content="Copyright 2021. MileniON. All rights reserved.">
-        <meta name="description" content="MileniON es una plataforma que pone a tu disposiciÃ³n todas las facilidades para
-                                          llegar a acuerdos en proyectos, trabajos o empleo y facilita el contacto entre 
-                                          clientes y profesionales de cualquier sector.">
-        <meta name="keywords" content="negocios,empleo,ONG,instituciones,educaciÃ³n,business,job,institutions,education">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MileniON Link</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img-fondo/img/logo2.png" type="image/x-icon">
+    <title>MileniON</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <style>
@@ -30,64 +24,131 @@
     <div id="particles-js"></div>
     <script src="img-fondo/particles.js-master/particles.js"></script>
     <script src="img-fondo/particles.js-master/demo/js/app.js"></script>
-    <section class="Language">
-        <picture onclick="window.open('https://milenion.com', '_blank')" title="Ir a MileniON">
-            <source media="(max-width: 600px)" srcset="img/logo2.png">
-            <source media="(max-width: 400px)" srcset="img/logo2.png">
-            <img src="img/logo.png">
-        </picture>
-        <ul class="sci">
-            <li data-text="Español" data-color="#12365D">
-                <a href="https://es.milenion.link" class="español"><p class="fa">es</p></a>
-            </li>
-            <li data-text="English" data-color="#12365D">
-                <a href="https://en.milenion.link" class="english"><p class="fa">en</p></a>
-            </li>
-		</ul>
-    <script src="js/vanilla-tilt.min.js"></script>
+    <section>
+	<img onclick="window.open('https://milenion.com', '_blank')" src="img/logo.png" width="250px">
+        <h1>Tutorial MetaMask</h1>
+        <h2>Instalación y configuración de su wallet</h2>
+        <p>MetaMask es una billetera donde podrá recibir y enviar sus tokens, en este caso KCO. Se puede descargar en Edge, Chrome, Brave y Firefox 
+            en su computadora; o en la playstore de Android o iOS si tiene un teléfono móvil. Para los propósitos de este tutorial, usaremos la versión de Edge, pero las instrucciones serán más o menos las mismas 
+            para todas las plataformas.<br>
+            En primer lugar, debe <a href="https://metamask.io/download.html" target="_blank">descargar MetaMask</a> desde el link.<br>
+            Una vez allí, seleccione la plataforma que esté utilizando y siga los pasos para instalarla en su dispositivo.
+            A continuación, siga la configuración especificada por la aplicación. Continúe y haga clic en Crear una billetera. 
+            Escriba la <a href="https://academy.binance.com/en/glossary/seed-phrase" target="_blank">frase secreta</a> que se le brindará en algún lugar seguro (preferiblemente en un dispositivo desconectado de Internet, 
+            ó en una hoja). Recuerde que sin esta frase, sus fondos no se pueden recuperar si su dispositivo se daña o lo pierde. Confirme
+            que los ha escrito en la página siguiente.<br>
+            ¡Listo! Ahora debería ver su billetera, lista para enviar y recibir fondos.
+            </p>
+    </section>
+    <div class="parallaxBg">
+        <img src="img/img1.jpg" class="parallaximg1" alt="City">
+        <h2>La billetera MetaMask recién inicializada.</h2>
+    </div>
+    <section>
+        <h2>Configurando la billetera</h2>
+        <p>Notará que la billetera por defecto es configurada en la red de <a href="https://academy.binance.com/en/articles/what-is-ethereum" target="_blank">Ethereum</a>.
+            Para poder recibir el token KCO de <a href="https://milenion.com" target="_blank">MileniON</a>, usted debe configurar el acceso a <a href="https://academy.binance.com/en/articles/an-introduction-to-binance-smart-chain-bsc" target="_blank">Binance Smart Chain</a>. ¡Vamos por ello!. Queremos acceder a 
+            la Configuración (Settings) para apuntar la billetera hacia los nodos de Binance Smart Chain. En la página de Configuración, ubique el menú Redes (Networks). Haga clic en Agregar red (Add Network) en la esquina superior derecha 
+            para agregar manualmente Binance Smart Chain. Es importante tener en cuenta que hay dos redes que podemos usar aquí: la red de prueba o la
+            red principal. A continuación se muestran los parámetros que debe completar para la red principal, que es la que usaremos.</p>
+    </section>
+    <div class="parallaxBg2">
+        <img src="img/img2.jpg" class="parallaximg2" alt="City">
+        <h2>Seleccione Configuración en el menú desplegable. Luego el menú Redes.</h2>
+    </div>
+    <section>
+        <h2>Parámetros de configuración de RPC</h2>
+        <div class="config" style="padding: 0 30px; text-align: center; line-height: 36px;">
+            <strong style="text-decoration: underline;">Nombre de red: </strong><br>Binance Smart Chain<br>
+            <strong style="text-decoration: underline;">Nueva URL de RPC: </strong><br>https://bsc-dataseed.binance.org/<br>
+            <strong style="text-decoration: underline;">ID de cadena: </strong><br>56<br>
+            <strong style="text-decoration: underline;">Símbolo: </strong><br>BNB<br>
+            <strong style="text-decoration: underline;">URL del Explorador de bloques: </strong><br>https://bscscan.com<br></div>
+            <p>Una vez que guarde la red y regrese a la vista principal, notará dos cosas: la red se ha configurado automáticamente a la que acaba de
+            ingresar, y las unidades ya no están denominadas en ETH, sino en <a href="https://academy.binance.com/en/articles/what-is-bnb" target="_blank">BNB</a>. El próximo paso será agregar el token KCO de MileniON.</p>
+    </section>
+    <div class="parallaxBg3">
+        <img src="img/img3.jpg" class="parallaximg3" alt="City">
+        <h2>Completando los parámetros de RPC.</h2>
+    </div>
+    <section>
+        <h2>Agregando el token KCO</h2>
+        <p>Como muestra la imágen anterior, hacemos clic en agregar tokens. Primero debe verificar que se encuentra seleccionada la red Binance Smart Chain.
+            <div class="config" style="padding: 0 30px; text-align: center; line-height: 36px;">
+                <strong style="text-decoration: underline;">Dirección del token: </strong><br><span style="display: flex; justify-content: center; padding-top: 30px">0x11186454f2c34c9326d917d1d9cacfda5244cfb2</span><br>
+                <strong style="text-decoration: underline;">Símbolo del token: </strong><br>KCO<br>
+                <strong style="text-decoration: underline;">Token de precisión: </strong><br>18<br></p></div>            
+                <p style="text-align:center;">Una vez que Metamask reconoce el contrato y muestra la informacion, haga clic en agregar token.</p>
+        </section>
+    <div class="parallaxBg4">
+        <img src="img/img4.jpg" class="parallaximg4" alt="City">
+        <h2>Agregando el token KCO de MileniON.</h2>
+    </div>
+    <section>
+        <h2>Gracias por ser parte de MileniON</h2>
+        <p>Ha finalizado la configuración de la billetera MetaMask para aceptar el token de MileniON en la red Binance Smart Chain.
+            Ya puede intercambiar tokens con sus clientes ó amigos y recibir fondos. No olvide que ante cualquier duda, <a href="mailto:info@milenion.com" >aquí</a> estamos para ayudarlo!</p>
+    </section>
+    <script src="js/simpleParallax.min.js"></script>
     <script>
-
-VanillaTilt.init(document.querySelectorAll(".sci li a"), { 
-    reverse:                true,  // reverse the tilt direction
-    max:                    30,     // max tilt rotation (degrees)
-    startX:                 0,      // the starting tilt on the X axis, in degrees.
-    startY:                 0,      // the starting tilt on the Y axis, in degrees.
-    perspective:            1000,   // Transform perspective, the lower the more extreme the tilt gets.
-    scale:                  1,      // 2 = 200%, 1.5 = 150%, etc..
-    speed:                  400,    // Speed of the enter/exit transition
-    transition:             true,   // Set a transition on enter/exit.
-    axis:                   null,   // What axis should be disabled. Can be X or Y.
-    reset:                  true,    // If the tilt effect has to be reset on exit.
-    easing:                 "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-    glare:                  true,   // if it should have a "glare" effect
-    "max-glare":            1,      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
-    "glare-prerender":      false,  // false = VanillaTilt creates the glare elements for you, otherwise
-                                    // you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
-    "mouse-event-element":  null,    // css-selector or link to HTML-element what will be listen mouse events
-                                    // you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
-    gyroscope:              true,    // Boolean to enable/disable device orientation detection,
-    gyroscopeMinAngleX:     -45,     // This is the bottom limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the left border of the element;
-    gyroscopeMaxAngleX:     45,      // This is the top limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the right border of the element;
-    gyroscopeMinAngleY:     -45,     // This is the bottom limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the top border of the element;
-    gyroscopeMaxAngleY:     45,      // This is the top limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the bottom border of the element;
-});        
-        VanillaTilt.init(document.querySelectorAll(".sci li a"));
-
-        let list = document.querySelectorAll('.sci li');
-        let bg = document.querySelector('.Language');
-        list.forEach(elements => {
-            elements.addEventListener('mouseenter', function
-            (event){
-                let color = event.target.getAttribute
-                ('data-color');
-                bg.style.backgroundColor = color;
-            })
-            elements.addEventListener('mouseleave', function
-            (event){
-                bg.style.backgroundColor = 'transparent';
-            })
-        })
+        var image1 = document.getElementsByClassName('parallaximg1');
+        var image2 = document.getElementsByClassName('parallaximg2');
+        var image3 = document.getElementsByClassName('parallaximg3');
+        var image4 = document.getElementsByClassName('parallaximg4');
+        new simpleParallax(image1, {
+            orientation: 'right',
+            overflow: 'false'
+        });
+        new simpleParallax(image2, {
+            orientation: 'left',
+            overflow: 'false'
+        });
+        new simpleParallax(image3, {
+            orientation: 'up',
+            overflow: 'false'
+        });
+        new simpleParallax(image4, {
+            orientation: 'down',
+            overflow: 'false'
+        });
     </script>
-</section>
+    <!--Settings
+    orientation
+    String
+    up
+    up - right - down - left - up left - up right - down left - left right
+
+    scale
+    Number
+    1.2
+    need to be above 1.0
+
+    overflow
+    Boolean
+    false
+
+    delay
+    Number
+    0.4
+    the delay is in second
+
+    transition
+    String
+    'cubic-bezier(0,0,0,1)'
+    any CSS transition
+
+    customContainer
+    String or Node
+    ""
+
+    customWrapper
+    String
+    ""
+    
+    maxTransition
+    Number
+    0
+    it should be a percentage between 1 and 99
+-->
 </body>
 </html>

@@ -1,16 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@font-face {
-    font-family: 'power_symbols';
-    src: url('fonts/Unicode_IEC_symbol.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.power{
-  font-family: 'power_symbols';
-  font-style: normal;
-  color: #7102a2;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 *
 {
     margin: 0;
@@ -18,229 +6,189 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body
+section
 {
+    padding: 50px;
     background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
+    color: #ffffff;
 }
-.btn
+section img
 {
+	display: block;
+	margin: auto;
+	margin-bottom: 30px;
     position: relative;
-    padding: 15px 20px;
-    background: #fff;
-    font-size: 18px;
-    display: inline-block;
-    text-decoration: none;
-    color: #03a9f4;
     cursor: pointer;
-    font-weight: 500;
-    letter-spacing: 2px;
+}
+section h1
+{
+    font-size: 3em;
     text-transform: uppercase;
-    transition: 0.5s;
-}
-.btn:hover
-{
-    letter-spacing: 4px;
-}
-#popup
-{
-position: fixed;
-top: -100%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1000;
-background: #fff;
-width: 450px;
-padding: 80px 50px 50px;
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-transition: 0.5s;
-visibility: hidden;
-}
-#popup.active
-{
-    visibility: visible;
-    top: 50%;
-}
-#popup .content
-{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#popup .content picture img
-{
-    max-width: 80px;
-}
-#popup .content h2
-{
-    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 20px;
     font-weight: 500;
-    color: #333;
-    margin: 20px 0 10px;
-}
-#popup .content p
-{
     text-align: center;
-    font-size: 16px;
-    color: #333;
 }
-#popup .content .inputBox
+section h2
 {
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
 }
-#popup .content .inputBox input
+section p
 {
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    outline: none;
-    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 400;
+    text-align: justify;
+    padding: 10px 100px;
 }
-#popup .content .inputBox input[type="submit"]
+section p a
 {
-    max-width: 150px;
-    background: #03a9f4;
-    color: #fff;
-    border: none;
-}
-.close
-{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-}
-.Language
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    transition: 0.5s;
-}
-.Language picture img
-{
-    position: absolute;
-    width: 540px;
-    top: 200px;
-    z-index: 10;
-    cursor: pointer;
-}
-.sci
-{
-    position: relative;
-    display: flex;
-}
-.sci li
-{
-    list-style: none;
-}
-.sci li::before
-{
-    content: attr(data-text);
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,calc(-50% + 120px));
-    font-size: 7vw;
-    pointer-events: none;
-    font-weight: 700;
-    transition: 0.5s;
-    opacity: 0;
-}
-.sci li:hover::before
-{
-    opacity: 0.5;
-    transform: translate(-50%,calc(-50% + 150px));
-}
-.sci li a
-{
-    position: relative;
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-radius: 10px;
+    color: #4985a7;
     text-decoration: none;
-    margin: 80px;
-    top: 90px;
-    font-size: 4em;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.05);
-    transition: background 0.25s;
+    position: relative;
+    cursor: pointer;
 }
-.js-tilt-glare
+.parallaxBg
 {
-    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #f2f3f5;
+    align-items: center;
 }
-.sci li a:hover.español
+.parallaxBg h2
 {
+    position: absolute;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
     background: transparent;
+    color: #051D36;
+    padding: 0 20px;
+    right:0;
 }
-.sci li a:hover.english
+.parallaxBg2
 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #f2f3f5;
+    align-items: center;
+}
+.parallaxBg2 h2
+{
+    position: absolute;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
     background: transparent;
+    color: #051D36;
+    padding: 0 20px;
+    left:60px;
+    bottom: 50px;
 }
-.sci li a .fa
+.parallaxBg3
 {
-    transition: 0.25s;
-    pointer-events: none; 
-    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #f2f3f5;
+    align-items: center;
 }
-.sci li a .fa
+.parallaxBg3 h2
 {
-    transition: 0.25s;
-    pointer-events: none; 
-    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    background: transparent;
+    color: #051D36;
+    padding: 0 20px;
+    left: 0;
 }
-.sci li a:hover .fa
+.parallaxBg4
 {
-    color: #020202;
-    transform: scale(1.75) translateZ(50px); 
-    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: #f2f3f5;
+    align-items: center;
 }
-.sci li a:hover .fa
+.parallaxBg4 h2
 {
-    color: #020202;
-    transform: scale(1.75) translateZ(50px); 
-    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    background: transparent;
+    color: #051D36;
+    padding: 0 20px;
+    right: 0;
+    bottom: 80px;
 }
-@media only screen and (max-width: 600px)
+@media (max-width: 500px)
 {
-    .sci li
+    section h1
     {
-        margin-top: 350px;
+        font-size: 2.4em;        
     }
-    .sci li::before
+    section h2 
     {
-        top: 35%;
-        font-size: 14vw;
+        font-size: 1.4em;
     }
-    .sci li a
+    section p
     {
-        margin: 40px;
-        top: 30px;
+        font-size: 1em;
+        padding: 10px 20px;
     }
-    .Language
+    div .config
     {
-        min-height: 100vh;
+        padding: 0 30px;
+        line-height: 36px;
+        font-size: 1em;
     }
-    .Language picture img
+    .parallaxBg h2
     {
-        width: 250px;
-        top:10%;
-        left: 20vw;
+        font-size: 0.8em;
+        bottom: 50px;
+    }
+    .parallaxBg2 h2
+    {
+        font-size: 0.7em;
+        left: 20px;
+        bottom: 40px;
+    }
+    .parallaxBg3 h2
+    {
+        font-size: 0.7em;
+        left: 40px;
+        bottom: 30px;
+    }
+    .parallaxBg4 h2
+    {
+        font-size: 0.7em;
+        left: 40px;
+        bottom: 150px;
     }
 }
